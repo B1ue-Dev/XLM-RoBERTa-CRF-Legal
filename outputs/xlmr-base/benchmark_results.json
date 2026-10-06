@@ -1,0 +1,144 @@
+{
+  "benchmark": "PAP_NER strict entity evaluation",
+  "metadata": {
+    "task": "pap_ner",
+    "model_name_or_path": "xlm-roberta-base",
+    "model_arch": "crf",
+    "checkpoint": "D:\\Dev\\luatphap\\PhoBERT-Legal-NER\\outputs\\xlmr-base",
+    "test_sentences": 10278,
+    "evaluation_epoch": 0
+  },
+  "metrics": {
+    "entity_strict_precision_micro": 0.9757330637007078,
+    "entity_strict_recall_micro": 0.965965965965966,
+    "entity_strict_micro_f1": 0.970824949698189,
+    "entity_strict_macro_f1": 0.972392323121586,
+    "per_entity": {
+      "CQ": {
+        "precision": 0.9789135595587208,
+        "recall": 0.9588291615374094,
+        "f1-score": 0.968767274737424,
+        "support": 7311,
+        "predicted": 7161,
+        "correct": 7010
+      },
+      "NG": {
+        "precision": 0.9997513056453619,
+        "recall": 0.9997513056453619,
+        "f1-score": 0.9997513056453619,
+        "support": 4021,
+        "predicted": 4021,
+        "correct": 4020
+      },
+      "SL": {
+        "precision": 0.9709697344039531,
+        "recall": 0.9585365853658536,
+        "f1-score": 0.9647131021785824,
+        "support": 1640,
+        "predicted": 1619,
+        "correct": 1572
+      },
+      "VBPL": {
+        "precision": 0.9620403321470937,
+        "recall": 0.9794685990338164,
+        "f1-score": 0.9706762417713943,
+        "support": 828,
+        "predicted": 843,
+        "correct": 811
+      },
+      "ĐT": {
+        "precision": 0.9616842105263158,
+        "recall": 0.9544504805683243,
+        "f1-score": 0.9580536912751677,
+        "support": 7179,
+        "predicted": 7125,
+        "correct": 6852
+      }
+    },
+    "tokens": 253894,
+    "entities": 20979,
+    "predicted_entities": 20769,
+    "correct_entities": 20265
+  },
+  "bio_classification_report": {
+    "O": {
+      "precision": 0.992822943320152,
+      "recall": 0.9971284087977768,
+      "f1-score": 0.9949710183991277,
+      "support": 205461.0
+    },
+    "B-CQ": {
+      "precision": 0.9861538461538462,
+      "recall": 0.9644371495007523,
+      "f1-score": 0.9751746075651753,
+      "support": 7311.0
+    },
+    "I-CQ": {
+      "precision": 0.9368334700574241,
+      "recall": 0.8531938737392604,
+      "f1-score": 0.8930596285434995,
+      "support": 2677.0
+    },
+    "B-ĐT": {
+      "precision": 0.9755583649388959,
+      "recall": 0.9674049310488926,
+      "f1-score": 0.9714645404951742,
+      "support": 7179.0
+    },
+    "I-ĐT": {
+      "precision": 0.9680754580083439,
+      "recall": 0.889055472263868,
+      "f1-score": 0.9268843348384855,
+      "support": 6003.0
+    },
+    "B-VBPL": {
+      "precision": 0.9726516052318668,
+      "recall": 0.9879227053140096,
+      "f1-score": 0.9802276812462553,
+      "support": 828.0
+    },
+    "I-VBPL": {
+      "precision": 0.976148719747457,
+      "recall": 0.9935737236701179,
+      "f1-score": 0.9847841472045293,
+      "support": 2801.0
+    },
+    "B-NG": {
+      "precision": 0.9997513056453619,
+      "recall": 0.9997513056453619,
+      "f1-score": 0.9997513056453619,
+      "support": 4021.0
+    },
+    "I-NG": {
+      "precision": 0.9997514292816306,
+      "recall": 0.9997514292816306,
+      "f1-score": 0.9997514292816306,
+      "support": 4023.0
+    },
+    "B-SL": {
+      "precision": 0.9913473423980222,
+      "recall": 0.9792429792429792,
+      "f1-score": 0.9852579852579852,
+      "support": 1638.0
+    },
+    "I-SL": {
+      "precision": 0.9692307692307692,
+      "recall": 0.978494623655914,
+      "f1-score": 0.9738406658739596,
+      "support": 1674.0
+    },
+    "accuracy": 0.9907928871666886,
+    "macro avg": {
+      "precision": 0.9789386594557972,
+      "recall": 0.964541509287324,
+      "f1-score": 0.9713788494864712,
+      "support": 243616.0
+    },
+    "weighted avg": {
+      "precision": 0.9906854498476353,
+      "recall": 0.9907928871666886,
+      "f1-score": 0.9906667212415884,
+      "support": 243616.0
+    }
+  }
+}
